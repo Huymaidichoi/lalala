@@ -1,0 +1,472 @@
+body {
+    min-width: 800px;
+    max-width: 100wv;
+    background-color: #18191a;
+}
+
+.tong {
+    justify-content: center;
+}
+
+/* =================MeNu======================= */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0099cc;
+    position: fixed;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0099cc;
+    padding: auto;
+    width: 80vw;
+    height: 50px;
+    min-width: 60vw;
+}
+
+.logo {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.logo img {
+    height: 100%;
+    border-radius: 5px 5px;
+}
+
+#menu-item {
+    background-color: rgb(38, 179, 38);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+
+}
+
+.tentrang {
+    padding-top: 20px;
+}
+
+#textlogo {
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#logo img {
+    max-width: 50px;
+    height: 50px;
+    padding: 5px 0px;
+}
+
+
+
+#Menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#Menu li {
+    position: relative;
+}
+
+#Menu li a {
+    color: #ffffff;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+    width: 80px;
+    border: 9px #000000;
+    font-weight: 600;
+
+}
+
+#Menu ul.sub_menu ul.sub_menu {
+    background: rgb(203, 12, 12);
+    padding: 18px 20px;
+
+}
+
+#Menu ul.sub_menu {
+    position: absolute;
+    background-color: rgb(63, 168, 213);
+    padding: 15px 0px;
+    list-style: none;
+    display: none;
+}
+
+#Menu li:hover>ul.sub_menu {
+    display: block;
+}
+
+#Menu ul.sub_menu a {
+    padding: 8px 5px;
+    border-bottom: 1px solid rgb(242, 240, 240);
+    left: 0;
+}
+
+#Menu ul.sub_menu li:last-child a {
+    border: none;
+}
+
+#Menu li:hover>a {
+    border-bottom: 2px blue;
+}
+
+#Menu ul.sub_menu ul.sub_menu {
+    left: 90px;
+    top: -15px
+}
+
+/*Thiết lập Border Cho Hover*/
+#Menu>li>a {
+    position: relative;
+}
+
+#Menu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: thistle;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#Menu>li:hover>a::before {
+
+    width: 100%;
+}
+
+#Menu .sub_menu li:hover>a {
+    color: red;
+    background-color: yellow;
+}
+
+#Menu>li.has::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    color: aliceblue;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 18px 0px;
+}
+
+#Menu .sub_menu>li.has::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    color: aliceblue;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 8px 0px;
+}
+
+/* -----------------Dưới Top__________________ */
+.duoitop {
+    height: 30px;
+    line-height: 30px;
+    color: #4E4E4E;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: 'Roboto Condensed', Tahoma, sans-serif;
+    background-color: beige;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Truyện chọn chuyện phần giữa???????????????????????????? */
+
+.Shop {
+    color: red;
+    background-color: yellow;
+    text-align: center;
+}
+
+ul.Sp li {
+    flex: 25%;
+    height: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+ul.Sp li .Sp-TSP {
+    padding: 3px;
+}
+
+ul.Sp li .Sp-TSP a {
+    display: block;
+    text-decoration: none;
+}
+
+ul.Sp li .sp-top .sp-thumb img {
+    display: block;
+}
+
+ul.Sp li:hover .sp-top .sp-thumb img {
+    filter: opacity(60%);
+}
+
+ul.Sp li .sp-top .sp-thumb {
+    display: block;
+}
+
+ul.Sp li .sp-top a.Mua {
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: aliceblue;
+    padding: 5px 0px;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    bottom: -36px;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+
+}
+
+.Sp li:hover a.Mua {
+    bottom: 0px;
+}
+
+.Sp li .Sp-TSP a.SP-N {
+    font-size: 20px;
+    color: rgb(11, 10, 10);
+    text-align: center;
+    font-family: 'Glyphicons Halflings';
+    font-weight: 500;
+}
+
+.Sp li img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Sp li .Sp-TSP .SP-gia {
+    color: black;
+    font-size: 12px;
+    padding: 2px 0px;
+}
+
+
+/*---Truyen---*/
+#anhtruyen {
+    width: 200px;
+    height: 250px;
+}
+
+.tong {
+    background-image: url('./IMG/Truyện/as.jpg');
+    background-size: cover;
+}
+
+.phantruyen {
+    width: 80vw;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.truyenkhu {
+    background-color: #242526;
+    padding: 15px;
+}
+
+.truyenkhu h1 {
+    color: white;
+}
+
+.truyen-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.truyen-container ul li {
+    list-style-type: none;
+}
+
+.truyen-container ul li a {
+    text-decoration: none;
+    color: white;
+    -webkit-text-fill-color: inherit;
+}
+
+.truyen {
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+    border: #f1c6a2 solid 1px;
+    border-radius: 5px;
+}
+
+.anhbia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.anhhia img {
+    object-fit: contain;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.ten_truyen {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    /* không cho xuống dòng */
+    overflow: hidden;
+    /* ẩn nội dung vượt quá giới hạn */
+    text-overflow: ellipsis;
+    /* thêm dấu chấm ở cuối nếu có nội dung bị ẩn đi */
+}
+
+.ten_truyen a {
+    align-items: center;
+    text-decoration: none;
+}
+
+/*hover*/
+
+/*Cuối*/
+.cuoicung {
+    background-color: black;
+    color: #FFF;
+    display: block;
+}
+
+.cuoitop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-intome {
+    justify-content: center;
+}
+
+/*Thong tin ca nhan*/
+.bd-info {
+    width: 80vw;
+    height: 100hw;
+    background-color: darkgoldenrod;
+}
+
+.avatar-user {
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-user div {
+    width: 200px;
+    height: 300px;
+}
+
+/*truyen*/
+.body_info {
+    width: 60vw;
+    background-color: antiquewhite;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.anhbia_khu {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.anhbia_info {
+    height: 250px;
+    width: 200px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anhbia_info img {
+    object-fit: contain;
+    object-position: center center;
+    max-width: 100%;
+    height: 80%;
+}
+
+.tentruyen {
+    text-align: center;
+}
+
+
+
+.list_khu {
+    display: flex;
+    justify-content: center;
+}
+
+.chuong_list {
+    border: #0099cc solid 1px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 400px;
+}
+
+.chuong_list p {
+    background-color: #0099cc;
+
+}
+
+.chuong_list a {
+    display: block;
+    text-decoration: none;
+}
+
+
+/*************/
+.center_div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.margin_top {
+    margin-top: 100px;
+}
+
+.tranh {
+    display: flex;
+    justify-content: center;
+}
+
+/*LOGIN*/
+.btnregister {
+    color: #FFF;
+    background-color: #0099cc;
+}
